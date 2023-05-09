@@ -1,6 +1,8 @@
 # Password-Generator
 ![image](https://github.com/99Anvar99/Password-Generator/assets/60616540/008e0562-ca76-46a1-95d1-01dad100dd58)
 
+Deployed Page: https://99anvar99.github.io/Password-Generator/
+
 # Changes
 - Added Checkboxes and input for a better and easy navigation.
 - User Input (Number from 8 to 128 characters)

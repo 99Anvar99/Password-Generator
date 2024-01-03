@@ -1,4 +1,5 @@
 const generateBtn = document.querySelector("#generate");
+const copyBtn = document.querySelector("#copy");
 const passwordInput = document.getElementById("password");
 const lengthInput = document.getElementById("length");
 const uppercaseCheckbox = document.getElementById("uppercase");
@@ -7,6 +8,7 @@ const numbersCheckbox = document.getElementById("numbers");
 const symbolsCheckbox = document.getElementById("symbols");
 
 generateBtn.addEventListener("click", writePassword);
+copyBtn.addEventListener("click", copyPassword);
 
 function writePassword() {
   const maxCharacterLength = 128;
@@ -55,4 +57,26 @@ function generatePassword(charset, length) {
 
 function getRandomIndex(max) {
   return Math.floor(Math.random() * max);
+}
+
+const invalid_messages_array = [
+  "Password length must be at least 8 characters",
+  "Maximum characters allowed is 128",
+  "Please select one or multiple checkboxes to generate a password",
+  "No password to copy",
+  "Your Secure Password",
+];
+
+function copyPassword() {
+  const passwordValue = passwordInput.value;
+  if (passwordValue === "" || invalid_messages_array.includes(passwordValue)) {
+    passwordInput.value = "No password to copy";
+    return;
+  }
+  passwordInput.select();
+  document.execCommand("copy");
+  passwordInput.value = "Password Copied: " + passwordValue;
+  setTimeout(() => {
+    passwordInput.value = passwordValue;
+  }, 3000);
 }

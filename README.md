@@ -1,5 +1,6 @@
 # Password-Generator
-![image](https://github.com/99Anvar99/Password-Generator/assets/60616540/008e0562-ca76-46a1-95d1-01dad100dd58)
+![image](https://github.com/99Anvar99/Password-Generator/assets/60616540/50bd5d5f-74aa-41c2-8352-acac34839d7a)
+
 
 Deployed Page: https://99anvar99.github.io/Password-Generator/
 

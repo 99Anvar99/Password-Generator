@@ -64,7 +64,7 @@ const invalid_messages_array = [
   "Maximum characters allowed is 128",
   "Please select one or multiple checkboxes to generate a password",
   "No password to copy",
-  "Your Secure Password",
+  "Select a password length and options to generate a password",
 ];
 
 function copyPassword() {
